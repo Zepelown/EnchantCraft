@@ -1,0 +1,4 @@
+name: EnchantCraft
+version: '${version}'
+main: org.blog.enchantcraft.EnchantCraft
+api-version: '1.20'

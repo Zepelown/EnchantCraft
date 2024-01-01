@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/EnchantCraft.main.iml" filepath="$PROJECT_DIR$/.idea/modules/EnchantCraft.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/org.blog.EnchantCraft.main.iml" filepath="$PROJECT_DIR$/.idea/modules/org.blog.EnchantCraft.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/EnhanceCraft.main.iml" filepath="$PROJECT_DIR$/.idea/modules/EnhanceCraft.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/java.EnhanceCraft.main.iml" filepath="$PROJECT_DIR$/.idea/modules/java.EnhanceCraft.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/org.blog.EnhanceCraft.main.iml" filepath="$PROJECT_DIR$/.idea/modules/org.blog.EnhanceCraft.main.iml" />
     </modules>
   </component>
 </project>

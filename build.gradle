@@ -38,7 +38,7 @@ tasks.withType(JavaCompile).configureEach {
 }
 
 tasks.jar{
-    archiveFileName = 'EnchantCraft.jar'
+    archiveFileName = 'EnhanceCraft.jar'
     destinationDirectory = file('C:\\Users\\Yoon\\Desktop\\game\\minecraft\\1.20.2 paper plugin develop server\\plugins')
 }
 

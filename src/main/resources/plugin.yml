@@ -1,4 +1,4 @@
-name: EnchantCraft
+name: EnhanceCraft
 version: '${version}'
-main: org.blog.enchantcraft.EnchantCraft
+main: org.blog.enhancecraft.EnhanceCraft
 api-version: '1.20'

@@ -17,7 +17,7 @@ public class EnhanceEquipmentController {
     }
 
     private void registerCommands(){
-        serverInstance.getServer().getPluginCommand("openEnhance").setExecutor(new OpenEnhanceUi(enhanceUiOpener));
+        serverInstance.getServer().getPluginCommand("enhance").setExecutor(new OpenEnhanceUi(enhanceUiOpener));
     }
 
 }

@@ -1,6 +1,8 @@
 package org.blog.enhancecraft.enhance.equipment.controller.commands;
 
-import org.blog.enhancecraft.enhance.equipment.view.EnhanceUiOpener;
+import org.blog.enhancecraft.enhance.equipment.entity.EnhanceUI;
+import org.blog.enhancecraft.enhance.equipment.service.EquipmentEnhancer;
+import org.blog.enhancecraft.enhance.equipment.view.EnhanceUIOpener;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -9,10 +11,12 @@ import org.jetbrains.annotations.NotNull;
 
 public class OpenEnhanceUi implements CommandExecutor {
 
-    private final EnhanceUiOpener enhanceUiOpener;
+    private final EnhanceUIOpener enhanceUiOpener;
+    private final EquipmentEnhancer equipmentEnhancer;
 
-    public OpenEnhanceUi(EnhanceUiOpener enhanceUiOpener){
+    public OpenEnhanceUi(EnhanceUIOpener enhanceUiOpener, EquipmentEnhancer equipmentEnhancer){
         this.enhanceUiOpener = enhanceUiOpener;
+        this.equipmentEnhancer = equipmentEnhancer;
     }
 
     @Override
@@ -25,8 +29,8 @@ public class OpenEnhanceUi implements CommandExecutor {
 
         Player player = (Player) sender;
 
-        enhanceUiOpener.openEnhanceUi(player);
-
+        EnhanceUI playerEnhanceUI = enhanceUiOpener.openEnhanceUi(player);
+        equipmentEnhancer.addPlayer(player, playerEnhanceUI);
 
         return false;
     }

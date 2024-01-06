@@ -5,7 +5,7 @@ import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-public class UiDisplayItem {
+public class UIDisplayItem {
 
     public static final ItemStack backgroundBlackGlassPane
             = buildItem(Material.BLACK_STAINED_GLASS_PANE, 1, "", "");
@@ -33,6 +33,9 @@ public class UiDisplayItem {
 
     public static final ItemStack guideSign
             = buildItem(Material.OAK_HANGING_SIGN,1,"여기 사이에 강화 재료를 넣어주세요","");
+
+    public static final ItemStack enhanceEffectYellowGlassPane
+            = buildItem(Material.YELLOW_STAINED_GLASS_PANE,1,"","");
 
 
     private static ItemStack buildItem(Material type, int amount, String displayName, String... lore) {
